@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9779038729E4012A00E721EF /* ModalSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9779038629E4012A00E721EF /* ModalSheet.swift */; };
 		979214E629DAB469003513E2 /* EachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979214E529DAB469003513E2 /* EachView.swift */; };
-		979214E829DAB5D6003513E2 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979214E729DAB5D6003513E2 /* ButtonView.swift */; };
 		97EE9DF629D7F49C00171E53 /* MC1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EE9DF529D7F49C00171E53 /* MC1App.swift */; };
 		97EE9DF829D7F49C00171E53 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EE9DF729D7F49C00171E53 /* ContentView.swift */; };
 		97EE9DFA29D7F49D00171E53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97EE9DF929D7F49D00171E53 /* Assets.xcassets */; };
 		97EE9DFD29D7F49D00171E53 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97EE9DFC29D7F49D00171E53 /* Preview Assets.xcassets */; };
-		97EE9E0429D7F95100171E53 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EE9E0329D7F95100171E53 /* RecipeView.swift */; };
 		97EE9E0629D7F96C00171E53 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EE9E0529D7F96C00171E53 /* ScanView.swift */; };
 		97EE9E0829D7FE9100171E53 /* ProduceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EE9E0729D7FE9100171E53 /* ProduceView.swift */; };
 		97EE9E0E29D8246400171E53 /* MoreFruits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EE9E0D29D8246400171E53 /* MoreFruits.swift */; };
@@ -23,14 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9779038629E4012A00E721EF /* ModalSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalSheet.swift; sourceTree = "<group>"; };
 		979214E529DAB469003513E2 /* EachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachView.swift; sourceTree = "<group>"; };
-		979214E729DAB5D6003513E2 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		97EE9DF229D7F49C00171E53 /* MC1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MC1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97EE9DF529D7F49C00171E53 /* MC1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MC1App.swift; sourceTree = "<group>"; };
 		97EE9DF729D7F49C00171E53 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		97EE9DF929D7F49D00171E53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97EE9DFC29D7F49D00171E53 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		97EE9E0329D7F95100171E53 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
 		97EE9E0529D7F96C00171E53 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
 		97EE9E0729D7FE9100171E53 /* ProduceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProduceView.swift; sourceTree = "<group>"; };
 		97EE9E0D29D8246400171E53 /* MoreFruits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreFruits.swift; sourceTree = "<group>"; };
@@ -53,7 +51,7 @@
 		97EE9DE929D7F49C00171E53 = {
 			isa = PBXGroup;
 			children = (
-				979214E729DAB5D6003513E2 /* ButtonView.swift */,
+				9779038629E4012A00E721EF /* ModalSheet.swift */,
 				979214E529DAB469003513E2 /* EachView.swift */,
 				97EE9E1629D824AF00171E53 /* MoreSea.swift */,
 				97EE9E1429D824A600171E53 /* MoreMeat.swift */,
@@ -61,7 +59,6 @@
 				97EE9E0D29D8246400171E53 /* MoreFruits.swift */,
 				97EE9E0729D7FE9100171E53 /* ProduceView.swift */,
 				97EE9E0529D7F96C00171E53 /* ScanView.swift */,
-				97EE9E0329D7F95100171E53 /* RecipeView.swift */,
 				97EE9DF429D7F49C00171E53 /* MC1 */,
 				97EE9DF329D7F49C00171E53 /* Products */,
 			);
@@ -137,7 +134,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 97EE9DED29D7F49C00171E53 /* Build configuration list for PBXProject "MC1" */;
+			buildConfigurationList = 97EE9DED29D7F49C00171E53 /* Build configuration list for PBXProject "familiAR" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -172,9 +169,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97EE9E0429D7F95100171E53 /* RecipeView.swift in Sources */,
-				979214E829DAB5D6003513E2 /* ButtonView.swift in Sources */,
 				979214E629DAB469003513E2 /* EachView.swift in Sources */,
+				9779038729E4012A00E721EF /* ModalSheet.swift in Sources */,
 				97EE9E0E29D8246400171E53 /* MoreFruits.swift in Sources */,
 				97EE9E1029D8248200171E53 /* MoreVeg.swift in Sources */,
 				97EE9E1529D824A600171E53 /* MoreMeat.swift in Sources */,
@@ -311,8 +307,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MC1/Preview Content\"";
+				DEVELOPMENT_TEAM = S8A3LN5PYH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,8 +337,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MC1/Preview Content\"";
+				DEVELOPMENT_TEAM = S8A3LN5PYH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -362,7 +362,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		97EE9DED29D7F49C00171E53 /* Build configuration list for PBXProject "MC1" */ = {
+		97EE9DED29D7F49C00171E53 /* Build configuration list for PBXProject "familiAR" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				97EE9DFE29D7F49D00171E53 /* Debug */,

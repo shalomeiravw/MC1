@@ -9,45 +9,17 @@ import SwiftUI
 
 struct MoreSea: View {
     let boxes4: [Box4]
-    let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    //    let columns = [
-    //        GridItem(.flexible()),
-    //        GridItem(.flexible()),
-    //        GridItem(.flexible()),
-    //        GridItem(.flexible())
-    //    ]
     
     var body: some View {
-        //        ScrollView(.vertical) {
-        //            LazyVGrid(columns: columns, spacing: 20) {
-        //                ForEach(boxes4, id: \.id) { box in
-        //                    NavigationLink(destination: EachView(box: nil, box2: nil, box3: nil, box4: box)){
-        //                        BoxView4(box: box)
-        //                    }
-        //                }
-        //            }
-        //            .padding(.horizontal)
-        //        }
+       
         List{
-            ForEach(letters.map { String($0) }, id: \.self) { letter in
-                Section(header: Text(letter)){
-                    ForEach(boxes4.filter { $0.title.hasPrefix(letter) }, id: \.id) { box in
-                        NavigationLink(destination: EachView(box: nil, box2: nil, box3: nil, box4: box)) {
-                            BoxView4(box: box)
-                        }
-                    }
+            ForEach(boxes4, id: \.id) { box in
+                NavigationLink(destination:
+                                EachView(box: nil, box2: nil, box3: nil, box4: box)){
+                    BoxView4(box: box)
                 }
-                //.listSectionSeparator(.hidden)
             }
-            
-            //            ForEach(boxes4, id: \.id) { box in
-            //                NavigationLink(destination:
-            //                                EachView(box: nil, box2: nil, box3: nil, box4: box)){
-            //                    BoxView4(box: box)
-            //                }
-            //            }
         }
-        .listStyle(.inset)
         .navigationTitle("Seafood")
         .navigationBarTitleDisplayMode(.inline)
     }

@@ -10,20 +10,32 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack{
-            //MAKE TAB BAR
+            // TAB BAR
             TabView {
                 ScanView()
+                    .ignoresSafeArea(.container, edges: [.top, .bottom])
+                    .safeAreaInset(edge: .top, alignment: .center, spacing: 0) {
+                        Color.clear
+                            .frame(height: 0)
+                            .background(.ultraThinMaterial)
+                    }
+                    .safeAreaInset(edge: .bottom, alignment: .center, spacing: 0) {
+                        Color.clear
+                            .frame(height: 0)
+                            .background(.thickMaterial)
+                    }
                     .tabItem {
                         Label("Scan", systemImage: "camera.viewfinder")
                     }
                 ProduceView()
+                    .safeAreaInset(edge: .bottom, alignment: .center, spacing: 0) {
+                        Color.clear
+                            .frame(height: 0)
+                            .background(.thickMaterial)
+                    }
                     .tabItem {
                         Label("All Produce", systemImage: "leaf.fill")
                     }
-//                RecipeView()
-//                    .tabItem {
-//                        Label("Recipes", systemImage: "frying.pan")
-//                    }
             }
         }
     }

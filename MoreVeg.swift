@@ -9,25 +9,16 @@ import SwiftUI
 
 struct MoreVeg: View {
     let boxes2: [Box2]
-    let columns = [
-            GridItem(.flexible()),
-            GridItem(.flexible()),
-            GridItem(.flexible()),
-            GridItem(.flexible())
-        ]
     
     var body: some View {
-        ScrollView(.vertical) {
-            LazyVGrid(columns: columns, spacing: 20) {
-                            ForEach(boxes2, id: \.id) { box in
-                                NavigationLink(destination: EachView(box: nil, box2: box, box3: nil, box4: nil)){
-                                    BoxView2(box: box)
-                                }
-                            }
-                        }
-                        .padding(.horizontal)
-                    }
-        .padding(.top,30)
+        List{
+            ForEach(boxes2, id: \.id) { box in
+                NavigationLink(destination:
+                                EachView(box: nil, box2: box, box3: nil, box4: nil)){
+                    BoxView2(box: box)
+                }
+            }
+        }
         .navigationTitle("Vegetables")
         .navigationBarTitleDisplayMode(.inline)
     }
@@ -36,13 +27,14 @@ struct MoreVeg: View {
 struct BoxView2: View{
     let box: Box2
     var body: some View{
-        VStack{
+        HStack{
             Image("\(box.imageUrl)")
                 .resizable()
                 .cornerRadius(40)
                 .frame(width: 80, height: 80)
             Text(box.title)
-                .font(.subheadline)
+                .padding(.leading,20)
+                .font(.title2)
                 .foregroundColor(.black)
         }
     }
