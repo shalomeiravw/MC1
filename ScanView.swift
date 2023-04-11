@@ -64,21 +64,12 @@ struct ScanView: View {
                 Button(action: {
                     self.isShowingSheet = true
                 }, label: {
-                    if colorScheme == .dark {
                         Text(status)
                             .fontWeight(.bold)
                             .padding()
                             .frame(maxWidth: .infinity, maxHeight: 70)
-                            .foregroundColor(Color.white)
+                            .foregroundColor(Color.primary)
                             .background(RoundedCorners(color: .thickMaterial, tl: 20, tr: 20, bl: 0, br: 0))
-                    } else {
-                        Text(status)
-                            .fontWeight(.bold)
-                            .padding()
-                            .frame(maxWidth: .infinity, maxHeight: 70)
-                            .foregroundColor(Color.black)
-                            .background(RoundedCorners(color: .thickMaterial, tl: 20, tr: 20, bl: 0, br: 0))
-                    }
                 })
                 .padding(.bottom, 80)
             }
@@ -173,10 +164,10 @@ struct ScanPreview: UIViewRepresentable {
         camera.preview.videoGravity = .resizeAspectFill
         view.layer.addSublayer(camera.preview)
         
-        // Add a rectangle layer to show the viewfinder
+        // Viewfinder
         let roundedRectLayer = CAShapeLayer()
         roundedRectLayer.strokeColor = UIColor.white.cgColor
-        roundedRectLayer.lineWidth = 8
+        roundedRectLayer.lineWidth = 6
         roundedRectLayer.opacity = 0.75
         roundedRectLayer.fillColor = UIColor.clear.cgColor
         let cornerRadius: CGFloat = 20

@@ -145,7 +145,7 @@ struct ProduceView: View {
                                 }
                             }
                         }
-                        ScrollView(.horizontal) {
+                        ScrollView(.horizontal) {   
                             HStack {
                                 ForEach(filteredBoxes2, id: \.id) { box in
                                     NavigationLink(destination: EachView(box: nil, box2: box, box3: nil, box4: nil)) {
@@ -224,7 +224,7 @@ struct ProduceView: View {
                     .frame(width: 80, height: 80)
                 Text(box.title)
                     .font(.subheadline)
-                    .foregroundColor(.black)
+                    .foregroundColor(Color.primary)
             }
         }
     }
@@ -238,7 +238,7 @@ struct ProduceView: View {
                     .frame(width: 80, height: 80)
                 Text(box.title)
                     .font(.subheadline)
-                    .foregroundColor(.black)
+                    .foregroundColor(Color.primary)
             }
         }
     }
@@ -252,7 +252,7 @@ struct ProduceView: View {
                     .frame(width: 80, height: 80)
                 Text(box.title)
                     .font(.subheadline)
-                    .foregroundColor(.black)
+                    .foregroundColor(Color.primary)
             }
         }
     }
@@ -266,7 +266,7 @@ struct ProduceView: View {
                     .frame(width: 80, height: 80)
                 Text(box.title)
                     .font(.subheadline)
-                    .foregroundColor(.black)
+                    .foregroundColor(Color.primary)
             }
         }
     }

@@ -35,7 +35,7 @@ struct BoxView: View{
             Text(box.title)
                 .padding(.leading,20)
                 .font(.title2)
-                .foregroundColor(.black)
+                .foregroundColor(Color.primary)
         }
     }
 }
